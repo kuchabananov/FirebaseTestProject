@@ -13,6 +13,8 @@
 		E5BE05C42753C0EA004B48B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5BE05C22753C0EA004B48B9 /* Main.storyboard */; };
 		E5BE05C62753C0EF004B48B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5BE05C52753C0EF004B48B9 /* Assets.xcassets */; };
 		E5BE05C92753C0EF004B48B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5BE05C72753C0EF004B48B9 /* LaunchScreen.storyboard */; };
+		E5BE05D12753CCE1004B48B9 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BE05D02753CCE1004B48B9 /* ShadowView.swift */; };
+		E5BE05D727551A86004B48B9 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BE05D627551A86004B48B9 /* PhotoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		E5BE05C52753C0EF004B48B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5BE05C82753C0EF004B48B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5BE05CA2753C0EF004B48B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5BE05D02753CCE1004B48B9 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		E5BE05D627551A86004B48B9 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				E5BE05BC2753C0EA004B48B9 /* AppDelegate.swift */,
 				E5BE05BE2753C0EA004B48B9 /* SceneDelegate.swift */,
 				E5BE05C02753C0EA004B48B9 /* ViewController.swift */,
+				E5BE05D02753CCE1004B48B9 /* ShadowView.swift */,
+				E5BE05D627551A86004B48B9 /* PhotoCell.swift */,
 				E5BE05C22753C0EA004B48B9 /* Main.storyboard */,
 				E5BE05C52753C0EF004B48B9 /* Assets.xcassets */,
 				E5BE05C72753C0EF004B48B9 /* LaunchScreen.storyboard */,
@@ -138,6 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5BE05D12753CCE1004B48B9 /* ShadowView.swift in Sources */,
+				E5BE05D727551A86004B48B9 /* PhotoCell.swift in Sources */,
 				E5BE05C12753C0EA004B48B9 /* ViewController.swift in Sources */,
 				E5BE05BD2753C0EA004B48B9 /* AppDelegate.swift in Sources */,
 				E5BE05BF2753C0EA004B48B9 /* SceneDelegate.swift in Sources */,
