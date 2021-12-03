@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E54383E02759101C00B0507A /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54383DF2759101C00B0507A /* UIImage.swift */; };
+		E54383E72759167500B0507A /* FullPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54383E62759167500B0507A /* FullPhotoView.swift */; };
 		E5BE05BD2753C0EA004B48B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BE05BC2753C0EA004B48B9 /* AppDelegate.swift */; };
 		E5BE05BF2753C0EA004B48B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BE05BE2753C0EA004B48B9 /* SceneDelegate.swift */; };
 		E5BE05C12753C0EA004B48B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BE05C02753C0EA004B48B9 /* ViewController.swift */; };
@@ -15,9 +17,15 @@
 		E5BE05C92753C0EF004B48B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5BE05C72753C0EF004B48B9 /* LaunchScreen.storyboard */; };
 		E5BE05D12753CCE1004B48B9 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BE05D02753CCE1004B48B9 /* ShadowView.swift */; };
 		E5BE05D727551A86004B48B9 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BE05D627551A86004B48B9 /* PhotoCell.swift */; };
+		E5BE05D927562CE9004B48B9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5BE05D827562CE8004B48B9 /* GoogleService-Info.plist */; };
+		E5BE05DC27562F59004B48B9 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = E5BE05DB27562F59004B48B9 /* FirebaseFirestore */; };
+		E5BE05DE27562F59004B48B9 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = E5BE05DD27562F59004B48B9 /* FirebaseStorage */; };
+		E5BE05E12757C21A004B48B9 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BE05E02757C21A004B48B9 /* Photo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E54383DF2759101C00B0507A /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		E54383E62759167500B0507A /* FullPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullPhotoView.swift; sourceTree = "<group>"; };
 		E5BE05B92753C0EA004B48B9 /* FirebaseTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5BE05BC2753C0EA004B48B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5BE05BE2753C0EA004B48B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +36,8 @@
 		E5BE05CA2753C0EF004B48B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5BE05D02753CCE1004B48B9 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		E5BE05D627551A86004B48B9 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		E5BE05D827562CE8004B48B9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E5BE05E02757C21A004B48B9 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,12 +45,65 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5BE05DC27562F59004B48B9 /* FirebaseFirestore in Frameworks */,
+				E5BE05DE27562F59004B48B9 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E54383DE2759100500B0507A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E54383DF2759101C00B0507A /* UIImage.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E54383E12759158300B0507A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E5BE05BC2753C0EA004B48B9 /* AppDelegate.swift */,
+				E5BE05BE2753C0EA004B48B9 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E54383E22759159D00B0507A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E5BE05C02753C0EA004B48B9 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E54383E3275915B200B0507A /* Cell Manager */ = {
+			isa = PBXGroup;
+			children = (
+				E5BE05D627551A86004B48B9 /* PhotoCell.swift */,
+			);
+			path = "Cell Manager";
+			sourceTree = "<group>";
+		};
+		E54383E4275915D000B0507A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E5BE05C22753C0EA004B48B9 /* Main.storyboard */,
+				E5BE05C72753C0EF004B48B9 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E54383E5275915EE00B0507A /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				E5BE05D02753CCE1004B48B9 /* ShadowView.swift */,
+				E54383E62759167500B0507A /* FullPhotoView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
 		E5BE05B02753C0EA004B48B9 = {
 			isa = PBXGroup;
 			children = (
@@ -60,17 +123,26 @@
 		E5BE05BB2753C0EA004B48B9 /* FirebaseTestProject */ = {
 			isa = PBXGroup;
 			children = (
-				E5BE05BC2753C0EA004B48B9 /* AppDelegate.swift */,
-				E5BE05BE2753C0EA004B48B9 /* SceneDelegate.swift */,
-				E5BE05C02753C0EA004B48B9 /* ViewController.swift */,
-				E5BE05D02753CCE1004B48B9 /* ShadowView.swift */,
-				E5BE05D627551A86004B48B9 /* PhotoCell.swift */,
-				E5BE05C22753C0EA004B48B9 /* Main.storyboard */,
+				E54383DE2759100500B0507A /* Extension */,
+				E5BE05DF2757C205004B48B9 /* Models */,
+				E54383E22759159D00B0507A /* Controllers */,
+				E54383E3275915B200B0507A /* Cell Manager */,
+				E54383E5275915EE00B0507A /* CustomViews */,
+				E54383E4275915D000B0507A /* Storyboards */,
+				E54383E12759158300B0507A /* App */,
 				E5BE05C52753C0EF004B48B9 /* Assets.xcassets */,
-				E5BE05C72753C0EF004B48B9 /* LaunchScreen.storyboard */,
+				E5BE05D827562CE8004B48B9 /* GoogleService-Info.plist */,
 				E5BE05CA2753C0EF004B48B9 /* Info.plist */,
 			);
 			path = FirebaseTestProject;
+			sourceTree = "<group>";
+		};
+		E5BE05DF2757C205004B48B9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E5BE05E02757C21A004B48B9 /* Photo.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,6 +161,10 @@
 			dependencies = (
 			);
 			name = FirebaseTestProject;
+			packageProductDependencies = (
+				E5BE05DB27562F59004B48B9 /* FirebaseFirestore */,
+				E5BE05DD27562F59004B48B9 /* FirebaseStorage */,
+			);
 			productName = FirebaseTestProject;
 			productReference = E5BE05B92753C0EA004B48B9 /* FirebaseTestProject.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +193,9 @@
 				Base,
 			);
 			mainGroup = E5BE05B02753C0EA004B48B9;
+			packageReferences = (
+				E5BE05DA27562F59004B48B9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = E5BE05BA2753C0EA004B48B9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -132,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5BE05C92753C0EF004B48B9 /* LaunchScreen.storyboard in Resources */,
+				E5BE05D927562CE9004B48B9 /* GoogleService-Info.plist in Resources */,
 				E5BE05C62753C0EF004B48B9 /* Assets.xcassets in Resources */,
 				E5BE05C42753C0EA004B48B9 /* Main.storyboard in Resources */,
 			);
@@ -144,11 +224,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5BE05E12757C21A004B48B9 /* Photo.swift in Sources */,
 				E5BE05D12753CCE1004B48B9 /* ShadowView.swift in Sources */,
 				E5BE05D727551A86004B48B9 /* PhotoCell.swift in Sources */,
 				E5BE05C12753C0EA004B48B9 /* ViewController.swift in Sources */,
 				E5BE05BD2753C0EA004B48B9 /* AppDelegate.swift in Sources */,
 				E5BE05BF2753C0EA004B48B9 /* SceneDelegate.swift in Sources */,
+				E54383E72759167500B0507A /* FullPhotoView.swift in Sources */,
+				E54383E02759101C00B0507A /* UIImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +451,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E5BE05DA27562F59004B48B9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E5BE05DB27562F59004B48B9 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E5BE05DA27562F59004B48B9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		E5BE05DD27562F59004B48B9 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E5BE05DA27562F59004B48B9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E5BE05B12753C0EA004B48B9 /* Project object */;
 }
